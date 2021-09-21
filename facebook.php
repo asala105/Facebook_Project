@@ -82,14 +82,14 @@
 						<div class="padding">
 							<div class="full col-sm-9">
 								<!-- content --> 
-								<div class="row">
+								<div id="srch" class="row" style="padding-top:5rem" hidden>
 								<table class="table">
 									<thead>
 									</thead>
 									<tbody id="search_result">
 									</tbody>
 									</table>
-								</div>                     
+							</div>             
 								<div class="row">
 								<!-- main col left --> 
 								<div class="col-sm-5" id="profile">

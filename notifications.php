@@ -80,6 +80,14 @@
 						<!-- /top nav -->
 
 						<div class="padding">
+						<div id="srch" class="row" style="padding-top:5rem" hidden>
+								<table class="table">
+									<thead>
+									</thead>
+									<tbody id="search_result">
+									</tbody>
+									</table>
+							</div>
                             <div class="row padding">
                             <h3>Notifications</h3>
 								<table  class="table">

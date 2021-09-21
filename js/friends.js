@@ -15,7 +15,6 @@ $(document).ready(function(){
             element = data[i];
             markup = markup + '<tr id="' + element.id + '">\
                     <th scope="col">' + element.first_name + ' ' + element.last_name + '</th>\
-                    <td>Mark</td>\
                     <td><button type="button" class="btn btn-outline-primary" onclick="unfriend('+element.id+')">Unfriend</button></td>\
                     <td><button type="button" class="btn btn-outline-danger" onclick="block('+element.id+')">Block</button></td>\
                     </tr>';
@@ -41,7 +40,6 @@ $(document).ready(function(){
             element = data[i];
             markup = markup + '<tr id="' + element.id + '">\
                     <th scope="col">' + element.first_name + ' ' + element.last_name + '</th>\
-                    <td>Mark</td>\
                     <td><button type="button" class="btn btn-outline-success" onclick="accept('+element.id+')">Accept</button></td>\
                     <td><button type="button" class="btn btn-outline-primary" onclick="reject('+element.id+')">Reject</button></td>\
                     <td><button type="button" class="btn btn-outline-danger" onclick="block('+element.id+')">Block</button></td>\
@@ -68,7 +66,6 @@ $(document).ready(function(){
             element = data[i];
             markup = markup + '<tr id="' + element.id + '">\
                     <th scope="col">' + element.first_name + ' ' + element.last_name + '</th>\
-                    <td>Mark</td>\
                     <td><button type="button" class="btn btn-outline-primary" onclick="cancel('+element.id+')">Cancel</button></td>\
                     <td><button type="button" class="btn btn-outline-danger" onclick="block('+element.id+')">Block</button></td>\
                     </tr>';

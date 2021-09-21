@@ -134,11 +134,13 @@ $(document).ready(function () {
                         </tr>';
             }
             $("#search_result").html(markup);
+            $("#srch").show();
         }else{
             $("#search_result").html("No results found");
         }
     }else{
         $("#search_result").html("");
+        $("#srch").hide();
     }
     }catch(error){
         console.log(error);
