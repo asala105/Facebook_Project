@@ -229,10 +229,10 @@
 				<input type='text' id="new_lname" class="form-control" placeholder="Last Name">
 			</div>	
 			<div class="form-group" style="padding:14px;">
-				<input type='email' id="email" class="form-control" placeholder="Email">
+				<input type='email' id="new_email" class="form-control" placeholder="Email">
 			</div>
 			<div class="form-group" style="padding:14px;">
-				<input type='date' id="birthday" class="form-control" placeholder="Birthday">
+				<input type='date' id="new_birthday" class="form-control" placeholder="Birthday">
 			</div>		
     	</div>
 		<div class="modal-footer">

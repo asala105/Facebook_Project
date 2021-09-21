@@ -28,8 +28,7 @@ if(isset($_POST["birthday"])) {
 }else{
     die ("type, Enter a valid input");
 }
-
-$sql1="UPDATE users SET first_name = ?, last_name = ?, email = ?, birthday = ? where id = ?";
+$sql1="UPDATE users SET first_name = ?, last_name = ?, email = ?, birthday = ? where id = ?;";
 $stmt1 = $connection->prepare($sql1);
 $stmt1->bind_param("sssss",$first_name, $last_name, $email, $birthday, $user_id);
 $stmt1->execute();

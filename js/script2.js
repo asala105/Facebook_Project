@@ -152,8 +152,8 @@ $(document).ready(function () {
         data = {
             first_name: $("#new_fname").val(),
             last_name: $("#new_lname").val(),
-            email: $("#email").val(),
-            birthday: $("#birthday").val(),
+            email: $("#new_email").val(),
+            birthday: $("#new_birthday").val(),
         };
         postProfileData(data);
     }
@@ -165,7 +165,7 @@ $(document).ready(function () {
         data: form_data,});
 
         var jsonData = await JSON.parse(result);
-        
+
         $("#name").text(jsonData.first_name + " " + jsonData.last_name);
         $("#email").text("Email: " + jsonData.email);
         $("#birthday").text("Birthday: " + jsonData.birthday);
