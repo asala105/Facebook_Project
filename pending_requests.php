@@ -19,17 +19,17 @@
 						<li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
 					</ul>
 					<ul class="nav hidden-xs" id="lg-menu">
-						<li class="active"><a href="facebook.php"><i class="glyphicon glyphicon-list-alt"></i> Home</a></li>
-						<li><a href="friends.php"><i class="glyphicon glyphicon-list"></i> Friends</a></li>
-						<li><a href="friend_requests.php"><i class="glyphicon glyphicon-paperclip"></i> Friend Requests</a></li>
-						<li><a href="pending_requests.php"><i class="glyphicon glyphicon-refresh"></i> Pending Requests</a></li>
+						<li class="active"><a href="facebook.php"><i class="fas fa-home"></i> Home</a></li>
+						<li><a href="friends.php"><i class="fas fa-user-friends"></i> Friends</a></li>
+						<li><a href="friend_requests.php"><i class="fas fa-users"></i> Friend Requests</a></li>
+						<li><a href="pending_requests.php"><i class="fas fa-users"></i> Pending Requests</a></li>
 					</ul>
 					<!-- tiny only nav-->
 					<ul class="nav visible-xs" id="xs-menu">
-						<li><a href="facebook.php" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-						<li><a href="friends.php" class="text-center"><i class="glyphicon glyphicon-list"></i></a></li>
-						<li><a href="friend_requests.php" class="text-center"><i class="glyphicon glyphicon-paperclip"></i></a></li>
-						<li><a href="pending_requests.php" class="text-center"><i class="glyphicon glyphicon-refresh"></i></a></li>
+						<li><a href="facebook.php" class="text-center"><i class="fas fa-home"></i></a></li>
+						<li><a href="friends.php" class="text-center"><i class="fas fa-user-friends"></i></a></li>
+						<li><a href="friend_requests.php" class="text-center"><i class="fas fa-users"></i></a></li>
+						<li><a href="pending_requests.php" class="text-center"><i class="fas fa-users"></i></a></li>
 					</ul>
 				</div>
 				<!-- /sidebar -->
