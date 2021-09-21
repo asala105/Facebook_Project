@@ -100,6 +100,7 @@
 											<p id="friends"> </p> <p id="followers"></p> <p id="following"></p>
 											<p id="email"></p>
 											<p id="birthday"></p>
+											<a href="#" class="pull-right" data-toggle="modal" data-target="#profile_update">edit profile</a>
 										</div>
 									</div>
 									<div class="well"> 
@@ -203,6 +204,45 @@
     	</div>
 		<div class="modal-footer">
 		<button id="update_address" class="btn btn-primary" type="button">Save Changes</button>
+		</div>
+		</form>
+    </div>
+	</div>
+</div>
+
+<div class="modal fade" id="profile_update" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+			<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+        	</button>
+        	<h5 class="modal-title" id="exampleModalLongTitle">Edit Profile</h5>
+
+    	</div>
+		<form>
+		<div class="modal-body">
+			<div class="form-group" style="padding:14px;">	
+				<div class="custom-file">
+					<input type="file" class="custom-file-input" id="customFile">
+					<label class="custom-file-label" for="customFile">Choose file</label>
+				</div>
+			</div>
+			<div class="form-group" style="padding:14px;">
+				<input type='text' id="new_fname" class="form-control" placeholder="First Name">
+			</div>	
+			<div class="form-group" style="padding:14px;">
+				<input type='text' id="new_lname" class="form-control" placeholder="Last Name">
+			</div>	
+			<div class="form-group" style="padding:14px;">
+				<input type='email' id="new_address_line" class="form-control" placeholder="Email">
+			</div>
+			<div class="form-group" style="padding:14px;">
+				<input type='date' id="new_address_line" class="form-control" placeholder="Birthday">
+			</div>		
+    	</div>
+		<div class="modal-footer">
+		<button id="update_profile" class="btn btn-primary" type="button">Save Changes</button>
 		</div>
 		</form>
     </div>
