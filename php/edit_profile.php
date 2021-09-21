@@ -31,13 +31,14 @@ if(isset($_POST["birthday"])) {
 
 $sql1="UPDATE users SET first_name = ?, last_name = ?, email = ?, birthday = ? where id = ?";
 $stmt1 = $connection->prepare($sql1);
-$stmt1->bind_param("ssss",$country, $city, $address_line, $user_id);
+$stmt1->bind_param("sssss",$first_name, $last_name, $email, $birthday, $user_id);
 $stmt1->execute();
 $result = $stmt1->get_result();
-$_SESSION['first_name'] = $country;
-$_SESSION['last_name'] = $city;
-$_SESSION['email'] = $address_line;
-$new_profile = ['country' => $country, 'city' => $city, 'address_line' => $address_line];
+$_SESSION['first_name'] = $first_name;
+$_SESSION['last_name'] = $last_name;
+$_SESSION['email'] = $email;
+$_SESSION['birthday'] = $birthday;
+$new_profile = ['first_name' => $first_name, 'last_name' => $last_name, 'email' => $email, 'birthday' => $birthday];
 
 echo json_encode($new_profile);
 

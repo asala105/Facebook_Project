@@ -146,6 +146,32 @@ $(document).ready(function () {
         console.log(error);
     }
     }
+
+    $("#update_profile").click(editAddress);
+    function editAddress(){
+        data = {
+            first_name: $("#new_fname").val(),
+            last_name: $("#new_lname").val(),
+            email: $("#email").val(),
+            address_line: $("#birthday").val(),
+        };
+        postAddressData(data);
+    }
+    async function postAddressData(form_data){
+    try{
+        result = await $.ajax({
+        type: "POST",
+        url: 'php/profile_update.php',
+        data: form_data,});
+
+        var jsonData = await JSON.parse(result);
+        $("#name").text(jsonData.first_name + " " + jsonData.last_name);
+        $("#email").text("Email: " + jsonData.email);
+        $("#birthday").text("Birthday: " + jsonData.birthday);
+    }catch(error){
+        console.log(error);
+    }
+    }
 });
 
 async function add(id){

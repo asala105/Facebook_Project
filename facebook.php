@@ -238,7 +238,7 @@
 				<input type='email' id="new_address_line" class="form-control" placeholder="Email">
 			</div>
 			<div class="form-group" style="padding:14px;">
-				<input type='date' id="new_address_line" class="form-control" placeholder="Birthday">
+				<input type='date' id="birthday" class="form-control" placeholder="Birthday">
 			</div>		
     	</div>
 		<div class="modal-footer">
