@@ -39,7 +39,7 @@ $_SESSION['last_name'] = $last_name;
 $_SESSION['email'] = $email;
 $_SESSION['birthday'] = $birthday;
 $new_profile = ['first_name' => $first_name, 'last_name' => $last_name, 'email' => $email, 'birthday' => $birthday];
-
-echo json_encode($new_profile);
+$jsonData = json_encode($new_profile);
+echo $jsonData;
 
 ?>

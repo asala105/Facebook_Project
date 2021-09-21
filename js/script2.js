@@ -147,24 +147,25 @@ $(document).ready(function () {
     }
     }
 
-    $("#update_profile").click(editAddress);
-    function editAddress(){
+    $("#update_profile").click(editProfile);
+    function editProfile(){
         data = {
             first_name: $("#new_fname").val(),
             last_name: $("#new_lname").val(),
             email: $("#email").val(),
-            address_line: $("#birthday").val(),
+            birthday: $("#birthday").val(),
         };
-        postAddressData(data);
+        postProfileData(data);
     }
-    async function postAddressData(form_data){
+    async function postProfileData(form_data){
     try{
         result = await $.ajax({
         type: "POST",
-        url: 'php/profile_update.php',
+        url: 'php/edit_profile.php',
         data: form_data,});
 
         var jsonData = await JSON.parse(result);
+        
         $("#name").text(jsonData.first_name + " " + jsonData.last_name);
         $("#email").text("Email: " + jsonData.email);
         $("#birthday").text("Birthday: " + jsonData.birthday);

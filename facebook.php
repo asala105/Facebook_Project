@@ -222,12 +222,6 @@
     	</div>
 		<form>
 		<div class="modal-body">
-			<div class="form-group" style="padding:14px;">	
-				<div class="custom-file">
-					<input type="file" class="custom-file-input" id="profile">
-					<label class="custom-file-label" for="customFile">Add Profile Photo</label>
-				</div>
-			</div>
 			<div class="form-group" style="padding:14px;">
 				<input type='text' id="new_fname" class="form-control" placeholder="First Name">
 			</div>	
@@ -235,7 +229,7 @@
 				<input type='text' id="new_lname" class="form-control" placeholder="Last Name">
 			</div>	
 			<div class="form-group" style="padding:14px;">
-				<input type='email' id="new_address_line" class="form-control" placeholder="Email">
+				<input type='email' id="email" class="form-control" placeholder="Email">
 			</div>
 			<div class="form-group" style="padding:14px;">
 				<input type='date' id="birthday" class="form-control" placeholder="Birthday">
