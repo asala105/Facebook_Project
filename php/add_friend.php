@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 include "connection.php";
 session_start();
 $friend_id = $_GET['q'];
